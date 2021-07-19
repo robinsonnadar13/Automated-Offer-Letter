@@ -1,8 +1,8 @@
 # Automated-Offer-Letter
 
-Predict the College you are likely to get into based on you GATE Rank, CGPI, branch for Masters!
+Automate the process of Offer Letter Generation by just selecting from the dropdowns and print ready to send OFFER LETTERS!
 <br />
-Filters through 50 dummy data present in the College API created!
+Along with the feature to add new admins to grant them authority to do the same! 
 
 ## Demonstration
 
