@@ -1,0 +1,74 @@
+
+<%- include("partials/header") %>
+<br />
+<br />
+<div class="container">
+	<h1 class="header">
+		Generate Offer Letter
+	</h1>
+	<br />
+<form action="/new" method="POST">
+  <div class="form-group">
+    <label for="name">Name <span style="color: red;">*</span></label>
+    <input type="text" class="form-control" name="name" placeholder="e.g. Aryan Tari" autofocus required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="date">Date of Joining <span style="color: red;">*</span></label>
+    <input type="date" class="form-control" name="date" required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="address1">Address line 1 <span style="color: red;">*</span></label>
+    <input type="text" class="form-control" name="address1" required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="address2">Address line 2<span style="color: red;">*</span></label>
+    <input type="text" class="form-control" name="address2" required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="address3">Address line 3<span style="color: red;">*</span></label>
+    <input type="text" class="form-control" name="address3" required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="address4">Address line 4</label>
+    <input type="text" class="form-control" name="address4" required>
+  </div>
+  <br />
+	<div class="form-group">
+    <label for="type">Type of Employment <span style="color: red;">*</span></label>
+    <br />
+    <select name="type" id="type" class="form-control">
+      <option value="full time">Full Time</option>
+      <option value="part time">Part Time</option>
+      <option value="intern">Internship</option>
+    </select>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="designation">Designation <span style="color: red;">*</span></label>
+    <br />
+    <select name="designation" id="designation" class="form-control">
+      <option value="Full Stack Developer">Full Stack Developer</option>
+      <option value="Flutter Developer">Flutter Developer</option>
+    </select>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="income">Income<span style="color: red;">*</span></label>
+    <input type="number" class="form-control" name="income" required>
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="ctc">CTC<span style="color: red;">*</span></label>
+    <input type="text" class="form-control" name="ctc" required>
+  </div>
+  <br />
+  <a></a>
+  <button type="submit" style="color: white;"  class="btn btn-info btn-lg btn-block mb-2">Generate</button>
+</form>
+</div>
+<%- include("partials/footer") %>
